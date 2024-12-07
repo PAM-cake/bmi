@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* General Styling for the entire App */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Container Styling */
+  .app-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
   }
-}
+  
+  .app-container:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Form Styling */
+  .bmi-form {
+    margin: 20px 0;
+  }
+  
+  .bmi-form input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .bmi-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .bmi-form output {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .bmi-form button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bmi-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Result Section Styling */
+  .bmi-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .bmi-category {
+    color: #007bff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Slider styling */
+  .slider-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  
